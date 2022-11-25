@@ -1,0 +1,8 @@
+utility\BaseTest.class
+GetBooking.class
+PartialUpdateBooking.class
+AuthToken.class
+DeleteBooking1.class
+DeleteBooking.class
+CreateBooking.class
+UpdateBooking.class
