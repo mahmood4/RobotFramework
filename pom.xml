@@ -9,7 +9,12 @@
     <url>http://maven.apache.org</url>
 
     <build>
-
+        <testResources>
+            <testResource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
         <plugins>
 
             <plugin>

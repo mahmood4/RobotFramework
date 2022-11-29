@@ -10,14 +10,6 @@
           <include name="getBookingIDs"/>
         </methods>
       </class> <!-- DeleteBooking -->
-      <class name="PartialUpdateBooking">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="setBaseURI"/>
-          <include name="updateBooking"/>
-          <include name="updateExistingBooking"/>
-        </methods>
-      </class> <!-- PartialUpdateBooking -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
