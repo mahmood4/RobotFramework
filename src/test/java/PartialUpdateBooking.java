@@ -46,7 +46,7 @@ public class PartialUpdateBooking extends BaseTest {
 	        body(setValue).log().body().
 	    when().
 			patch("/posts/{id}");
-		
+
 		//Verify the response code
 		AllureLogger.logToAllure("Asserting the response if the status code returned is 200");
 		response.then().spec(responseSpec);		

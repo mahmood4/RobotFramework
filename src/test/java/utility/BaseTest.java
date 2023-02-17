@@ -47,7 +47,7 @@ public abstract class BaseTest extends FrameworkUtility {
 		requestSpec = new RequestSpecBuilder().
                 		setBaseUri(readConfigurationFile("Base_URI")).
                 		build();
-        
+		System.out.println("requestSpec:::  "  +requestSpec);
 	}
 
 	/*****************************************************************************************************************/
@@ -71,6 +71,7 @@ public abstract class BaseTest extends FrameworkUtility {
 	@BeforeMethod
 	public void beforeMethod() {
     	responseSpec = new ResponseSpecBuilder().build();
+		System.out.println("responseSpec:::  "  +responseSpec);
 	}
 
 //	@AfterMethod

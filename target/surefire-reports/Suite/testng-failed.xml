@@ -3,13 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="DeleteBooking">
+      <class name="GetBooking">
         <methods>
           <include name="beforeMethod"/>
           <include name="setBaseURI"/>
-          <include name="getBookingIDs"/>
+          <include name="JSONSchemaValidation"/>
+          <include name="getBookingIDs" invocation-numbers="0"/>
         </methods>
-      </class> <!-- DeleteBooking -->
+      </class> <!-- GetBooking -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

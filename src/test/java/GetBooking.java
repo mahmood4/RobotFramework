@@ -37,7 +37,7 @@ public class GetBooking extends BaseTest {
 		AllureLogger.logToAllure("Getting the response for the Booking IDs from test data excel");
 		Response response = given().
 				spec(requestSpec).
-				pathParam("id", 10).
+				pathParam("id", 7).
 			when().
 				get("/posts/{id}");
 		      //   get("/api/Tourist/?page={id}");
@@ -99,6 +99,7 @@ public void ValidStatusCodeWithPage() throws IOException {
 public void ValidStatusCode_page_number() throws IOException {
 		Integer pageNumber= Integer.parseInt(readPropertyValue("page"));
 		String emailid = readPropertyValue("emailid");
+
 		resp=RestAssured.given().
 				spec(requestSpec).
 				header("Accept","application/json").

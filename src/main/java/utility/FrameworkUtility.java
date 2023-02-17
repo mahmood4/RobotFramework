@@ -18,6 +18,7 @@ public abstract class FrameworkUtility {
 	public static String readConfigurationFile(String key) {
 		try{
 			properties = new Properties();
+
 			properties.load(new FileInputStream(FrameworkConstants.CONFIG_FILE_PATH));
 			
 		} catch (Exception e){
